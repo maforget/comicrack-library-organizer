@@ -670,4 +670,4 @@ def get_toolstrip_renderer():
     if ComicRack.App.ProductVersion >= '0.9.182':
         return ComicRack.Theme.ToolStripRenderer # The ToolStripRenderer will return a system renderer when Dark Mode is disabled
     else:
-        return System.Windows.Forms.ToolStripSystemRenderer
+        return System.Windows.Forms.ToolStripSystemRenderer()
